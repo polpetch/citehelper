@@ -10,7 +10,7 @@ import {
   Space,
 } from '@mantine/core';
 
-export function MainCard() {
+export default function MainCard() {
   return (
     <>
       <Card ml={200} mr={200} shadow="sm" radius="md" withBorder w="lg">

@@ -1,6 +1,6 @@
 import { Card, Center, Space, Text } from '@mantine/core';
 
-export function ArchiveCard() {
+export default function ArchiveCard() {
   return (
     <>
       <Card ml={100} mr={100} shadow="sm" radius="md" withBorder w="lg">

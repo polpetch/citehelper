@@ -1,7 +1,7 @@
 import { AppShell, Space } from '@mantine/core';
-import { MainCard } from './maincard';
+import ArchiveCard from './archivecard';
+import MainCard from './maincard';
 import NavBar from './navbar';
-import { ArchiveCard } from './archivecard';
 
 export default function IndexPage() {
   return (

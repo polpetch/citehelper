@@ -1,9 +1,14 @@
-import { Button, Group } from "@mantine/core";
+import { AppShell, Space } from '@mantine/core';
+import { MainCard } from './maincard';
+import NavBar from './navbar';
+import { ArchiveCard } from './archivecard';
 
 export default function IndexPage() {
   return (
-    <Group mt={50} position="center">
-      <Button size="xl">Welcome to Mantine!</Button>
-    </Group>
+    <AppShell padding={32} header={<NavBar />}>
+      <MainCard />
+      <Space mt={40} />
+      <ArchiveCard />
+    </AppShell>
   );
 }

@@ -1,6 +1,6 @@
-import { AppProps } from "next/app";
-import Head from "next/head";
-import { MantineProvider } from "@mantine/core";
+import { MantineProvider } from '@mantine/core';
+import { AppProps } from 'next/app';
+import Head from 'next/head';
 
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
@@ -20,8 +20,11 @@ export default function App(props: AppProps) {
         withGlobalStyles
         withNormalizeCSS
         theme={{
+          fontFamily: 'Helvetica Neue',
           /** Put your mantine theme override here */
-          colorScheme: "dark",
+          colors: {
+            light: ['#000000'],
+          },
         }}
       >
         <Component {...pageProps} />
